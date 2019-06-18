@@ -45,7 +45,7 @@ subprojects {
             eachDependency { details ->
                 /* Override by group name */
                 switch (details.requested.group) {
-                    case 'com.android.support': details.useVersion '27.+'; break
+                    case 'com.android.support': details.useVersion '28.+'; break
                 }
             }
         }

@@ -8,9 +8,9 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.net.Uri;
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringDef;
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringDef;
 import android.util.Base64;
 import android.util.Log;
 import android.view.TextureView;
@@ -137,8 +137,8 @@ public class ViewShot implements UIBlock {
             final String extension,
             @Formats final int format,
             final double quality,
-            @Nullable Integer width,
-            @Nullable Integer height,
+            @NonNull Integer width,
+            @NonNull Integer height,
             final File output,
             @Results final String result,
             final Boolean snapshotContentContainer,

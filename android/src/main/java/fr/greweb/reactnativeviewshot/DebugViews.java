@@ -5,8 +5,8 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.Matrix;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v4.util.Pair;
+import androidx.annotation.NonNull;
+import androidx.core.util.Pair;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -211,7 +211,7 @@ public final class DebugViews {
      * @see <a href="https://stackoverflow.com/questions/10137692/how-to-get-resource-name-from-resource-id">Lookup resource name</a>
      */
     @NonNull
-    private static String resolveIdToName(@Nullable final Resources r, @NonNull final View v) {
+    private static String resolveIdToName(@NonNull final Resources r, @NonNull final View v) {
         if (null == r) return "";
 
         try {
